@@ -1,31 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Photo Gallery - Blueberry Hill Farm</title>
-  <style>
-    body { font-family: sans-serif; background-color: #fefefe; margin: 0; }
-    header, footer { text-align: center; background-color: #e6f0ff; padding: 1rem; }
-    .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; padding: 2rem; max-width: 1200px; margin: auto; }
-    .gallery img { width: 100%; border: 2px solid #ccc; border-radius: 8px; object-fit: cover; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery - Blueberry Hill Farm</title>
+  
+<style>
+  body {
+    font-family: Georgia, serif;
+    margin: 0;
+    background: #fff;
+    color: #000;
+  }
+  header {
+    background-color: #e6f0ff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+  nav {
+    background-color: #d4e0f0;
+    padding: 0.75rem;
+    text-align: center;
+  }
+  nav a {
+    margin: 0 1rem;
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+  .main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+</style>
+
 </head>
 <body>
-  <header>
-    <h1>Photo Gallery</h1>
-  </header>
-  <main>
-    <div class="gallery">
-      <img src="images/BHFarm_1944.jpg" alt="Farm in 1944">
-      <img src="images/BHFarm_2004.jpg" alt="Farm in 2004">
-      <img src="images/RWA_aug_1941.jpg" alt="Robert W. Austin 1941">
-      <img src="images/blueberry.jpg" alt="Blueberry close-up">
-      <img src="images/farm.jpg" alt="Farm Painting">
-    </div>
-  </main>
-  <footer>
-    <p>&copy; 2025 Blueberry Hill Farm</p>
-  </footer>
+  
+<header>
+  <div class="container">
+    <h1>Blueberry Hill Farm</h1>
+    <p>Mt. Washington, Massachusetts | Est. 1941</p>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About / Contact</a>
+    <a href="history.html">Our History</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="recipes.html">Recipes</a>
+  </nav>
+</header>
+
+  <div class="main">
+    <h2>Gallery</h2><p>Photos of the farm and visitors will appear here.</p>
+  </div>
+  
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Blueberry Hill Farm. All rights reserved.</p>
+  </div>
+</footer>
+
 </body>
 </html>
