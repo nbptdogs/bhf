@@ -6,70 +6,42 @@
   <title>Gallery - Blueberry Hill Farm</title>
   
 <style>
-  body {
-    font-family: Georgia, serif;
-    margin: 0;
-    background: #fff;
-    color: #000;
-  }
-  header {
-    background-color: #e6f0ff;
-    text-align: center;
-    padding: 1.5rem 1rem;
-  }
-  nav {
-    background-color: #d4e0f0;
-    padding: 0.75rem;
-    text-align: center;
-  }
-  nav a {
-    margin: 0 1rem;
-    color: #003366;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  nav a:hover {
-    text-decoration: underline;
-  }
-  footer {
-    background-color: #f0f0f0;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-    font-size: 0.9rem;
-  }
-  .main {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1rem;
-  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f9f9f9; color: #333; }
+  header { background: #e3efff; padding: 1rem 2rem; text-align: center; }
+  header h1 { margin: 0; font-size: 2rem; }
+  nav { background: #d1e0ff; display: flex; justify-content: center; gap: 1.5rem; padding: 1rem 0; flex-wrap: wrap; }
+  nav a { text-decoration: none; color: #003366; font-weight: bold; }
+  nav a:hover { text-decoration: underline; }
+  .container { max-width: 960px; margin: auto; padding: 2rem 1rem; background: white; }
+  footer { background: #eee; padding: 1rem; text-align: center; font-size: 0.9rem; margin-top: 3rem; }
+  h2 { border-bottom: 2px solid #ccc; padding-bottom: 0.25rem; margin-top: 2rem; }
+  .photo-placeholder { width: 100%; height: 300px; background: #ccc; margin: 1rem 0; display: flex; align-items: center; justify-content: center; color: #666; font-style: italic; }
 </style>
 
 </head>
 <body>
   
 <header>
-  <div class="container">
-    <h1>Blueberry Hill Farm</h1>
-    <p>Mt. Washington, Massachusetts | Est. 1941</p>
-  </div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About / Contact</a>
-    <a href="history.html">Our History</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="recipes.html">Recipes</a>
-  </nav>
+  <h1>Blueberry Hill Farm</h1>
+  <p>Mt. Washington, Massachusetts | Est. 1941</p>
 </header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About / Contact</a>
+  <a href="history.html">Our History</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="recipes.html">Recipes</a>
+  <a href="links.html">Links</a>
+</nav>
 
-  <div class="main">
-    <h2>Gallery</h2><p>Photos of the farm and visitors will appear here.</p>
+  <div class="container">
+    <h2>Gallery</h2><div class='photo-placeholder'>Photo Placeholder</div>
   </div>
   
 <footer>
-  <div class="container">
-    <p>&copy; 2025 Blueberry Hill Farm. All rights reserved.</p>
-  </div>
+  <p>&copy; 2025 Blueberry Hill Farm | 358 East Street, Mt. Washington, MA</p>
+  <p>Check our <a href="https://www.facebook.com/" target="_blank">Facebook Page</a> for live picking conditions.</p>
 </footer>
 
 </body>
